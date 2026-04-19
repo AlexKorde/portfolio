@@ -17,7 +17,7 @@
     </header>
 
     <main>
-                       <section class="project">
+        <section class="project">
             <div class="metadata">
                 <p class="label">Project 01</p>
                 <p class="title-sub">Market Modeling</p>
@@ -29,19 +29,19 @@
             </div>
             <div class="content">
                 <h2>CFP ANILYZER: <br>PREDICTIVE MODELING</h2>
-                [span_2](start_span)<p>Designed an era-normalization framework to control for structural shifts in offensive production[span_2](end_span). [span_3](start_span)Engineered interaction terms to capture NIL-era stat differentials and regulatory break points[span_3](end_span).</p>
-                <div class="tech-stack">PYTHON / SCIKIT-LEARN / PANDAS</div>
+                <p>
+                    Designed an era-normalization framework to control for structural shifts in offensive production across seasons, enabling valid cross-era team comparisons that account for the evolution of the game itself. Engineered interaction terms — specifically NIL-era × stat differentials — to directly capture how the predictive weight of statistics like rushing yards, passing yards, and turnovers shifted after the 2021 regulatory breakpoint. Trained a logistic regression model on game-level data spanning 2016–2024 and validated structural change using a formal Chow Test, which compares residual sum of squares across pre- and post-NIL eras to detect whether the regression coefficients themselves changed — not just the outcomes. Built a multi-page Streamlit dashboard featuring matchup prediction, era-normalized team ratings, and coefficient shift visualization, providing an end-to-end analytical pipeline from raw API data to interpretable win probabilities.
+                </p>
+                <div class="tech-stack">PYTHON / SCIKIT-LEARN / PANDAS / STREAMLIT / PLOTLY</div>
                 <div class="file-links">
                     <a href="cfb-nil-analyzer/cfb-model.py" class="file-link">ANALYZER (.PY)</a>
                     <a href="cfb-nil-analyzer/dashboard.py" class="file-link">DASHBOARD (.PY)</a>
-                    
                     <a href="cfb-nil-analyzer/Screenshots/tcu-v-ucf.png" class="file-link">MATCHUP (.PNG)</a>
                     <a href="cfb-nil-analyzer/Screenshots/rankings.png" class="file-link">RANKINGS (.PNG)</a>
                     <a href="cfb-nil-analyzer/Screenshots/data-sheet.png" class="file-link">DATA (.PNG)</a>
                 </div>
             </div>
         </section>
-
 
         <section class="project">
             <div class="metadata">
@@ -55,8 +55,10 @@
             </div>
             <div class="content">
                 <h2>HYDRO-TURBINE <br>EFFICIENCY</h2>
-                [span_3](start_span)<p>Formulated a constrained optimization model to maximize power output relative to blade surface area[span_3](end_span). [span_4](start_span)Simulated efficiency gradients in MATLAB to identify peak operational geometry[span_4](end_span).</p>
-                <div class="tech-stack">MATLAB / CALCULUS / PHYSICS</div>
+                <p>
+                    Formulated a constrained optimization model to maximize total power output across three hydroelectric turbines, each governed by a distinct quadratic function of water flow rate derived from Bernoulli's equation and experimental data. Applied the method of Lagrange multipliers — solving the stationary points of L(x, y, λ) = f(x, y) − λ(g(x, y) − c) — to determine the optimal flow distribution among turbines subject to individual capacity constraints. Derived closed-form expressions for each turbine's flow as a linear function of total flow Q_T, enabling rapid computation of the optimal split at any inflow level. Simulated efficiency gradients and power curves in MATLAB, benchmarked the optimized allocation against equal distribution (which yielded ~158 kW less power at Q_T = 2500 ft³/s), and extended the analysis to two-turbine configurations. Results demonstrated that Turbines 1 and 3 form the dominant pair for mid-range flows, and identified the upper feasibility bound beyond which no valid optimization exists.
+                </p>
+                <div class="tech-stack">MATLAB / MULTIVARIATE CALCULUS / LAGRANGE MULTIPLIERS</div>
                 <div class="file-links">
                     <a href="hydro-turbine/optimization_logic.m" class="file-link">TURBINE (.M)</a>
                     <a href="hydro-turbine/hydro-turbine-paper.pdf" class="file-link">PAPER (.PDF)</a>
@@ -76,8 +78,10 @@
             </div>
             <div class="content">
                 <h2>METHODOLOGICAL <br>MODELING</h2>
-                [span_5](start_span)[span_6](start_span)<p>Executed Multiple Linear Regression and Randomized Block Designs on complex datasets[span_5](end_span)[span_6](end_span). [span_7](start_span)Conducted inference on categorical data and validated experimental results through rigorous hypothesis testing[span_7](end_span).</p>
-                <div class="tech-stack">IBM SPSS / DATA WRANGLING</div>
+                <p>
+                    Executed Multiple Linear Regression and Analysis of Variance on complex real-world datasets, using IBM SPSS for full data wrangling, model fitting, and diagnostic output. Identified statistically significant predictors and interaction effects, interpreting both partial coefficients and omnibus F-tests to draw valid inferential conclusions. Conducted chi-square tests for independence on contingency tables to perform inference on categorical data, and applied distribution-free nonparametric methods as robustness checks where normality assumptions were untenable. Designed and analyzed Randomized Block Designs to isolate treatment effects from nuisance variation, applying rigorous hypothesis testing frameworks and effect size estimation to validate experimental results.
+                </p>
+                <div class="tech-stack">IBM SPSS / DATA WRANGLING / HYPOTHESIS TESTING</div>
             </div>
         </section>
 
@@ -88,7 +92,9 @@
             </div>
             <div class="content">
                 <h2>PROFESSIONAL <br>VITAE</h2>
-                [span_8](start_span)<p>B.A. in Mathematics (Financial Concentration)[span_8](end_span). [span_9](start_span)[span_10](start_span)Experience in high-performance team restructuring and academic tutoring for multivariate calculus and business statistics[span_9](end_span)[span_10](end_span).</p>
+                <p>
+                    B.A. in Mathematics with a concentration in Financial Mathematics, currently in progress at the University of Virginia (2024–2027), following foundational Economics coursework at Virginia Commonwealth University. Combines rigorous quantitative training — spanning statistical modeling, probability theory, differential equations, and logistic regression — with hands-on applied experience in predictive modeling and physical optimization. Worked as an Athletic Tutor at VCU's Student-Athlete Support Services and as a Content Tutor at UVA's Cavalier Academic Support Team, translating abstract multivariate calculus, probability, and business statistics into structured, applied frameworks for student-athletes. Developed a financial model at VCU recognized as the department's benchmark standard for future curriculum instruction.
+                </p>
                 <a href="resume/alex-korde-resume.pdf" class="cv-button" target="_blank">DOWNLOAD DOCUMENT (PDF)</a>
             </div>
         </section>
