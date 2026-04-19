@@ -1,0 +1,101 @@
+/* Color Palette: Beige Background (#F5F5DC), Navy Text (#000080) */
+
+:root {
+    --bg-color: #F5F5DC;
+    --navy: #000080;
+    --border: 1px solid #000080;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--navy);
+    font-family: 'Garamond', serif;
+    padding: 4vw;
+    line-height: 1.4;
+}
+
+/* Header Typography */
+h1 {
+    font-size: clamp(4rem, 15vw, 12rem);
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -0.05em;
+    border-bottom: 3px solid var(--navy);
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Project Layout */
+.project {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-top: var(--border);
+    padding: 3rem 0;
+    gap: 2rem;
+}
+
+.metadata {
+    font-family: monospace;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.constants {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 0.9;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Traffic Light Grid */
+.traffic-light-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    border: var(--border);
+    font-family: monospace;
+    padding: 1rem;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.grid-header { border-bottom: var(--border); padding-bottom: 5px; font-weight: bold; }
+
+.light { width: 15px; height: 15px; border-radius: 50%; border: var(--border); align-self: center; justify-self: center; }
+.green { background-color: #2e7d32; }
+.yellow { background-color: #fbc02d; }
+.red { background-color: #c62828; }
+
+footer {
+    margin-top: 10rem;
+    border-top: var(--border);
+    padding-top: 2rem;
+    font-family: monospace;
+    font-size: 0.7rem;
+    text-align: center;
+}
